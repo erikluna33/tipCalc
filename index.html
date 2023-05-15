@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+      <div class="header">
+          <p>Spli</p>
+          <p>tter</p>
+      </div>
+      <div class="calculator-container">
+        <div class="calculator">
+          <div class="box-1">
+            <div class="bill">
+              <label>Bill</label>
+              <div class="bill-input">
+                <input class="total-bill" placeholder="$ 0"></input>
+              </div>
+            </div>
+            <div class="tip-input">
+              <label>Select Tip %</label>
+              <div class="tip-grid">
+                <button class="tip-button">5%</button>
+                <button class="tip-button">10%</button>
+                <button class="tip-button">15%</button>
+                <button class="tip-button">25%</button>
+                <button class="tip-button">50%</button>
+                <button class="custom-btn">Custom</button>
+              </div>
+            </div>
+            
+            <div class="num-of-people">
+              <div id="customTipId" class="hidden-custom-tip">
+                <label>Enter custom tip</label>
+                <h5 class="people-validate hidden">Can't be zero</h5>
+                <input></input>
+              </div>
+              <label>Number of People</label>
+              <h5 class="people-validate hidden">Can't be zero</h5>
+              <div class="hidden-border"><input class="total-people" placeholder="&#xf183 0"></input></div>
+              
+            </div>
+          </div>
+          <div class="box-2">
+            <div class="tip-total-container">
+              <div class="tip-amount">
+                <div class="amount-styles">
+                  <h4>Tip Amount</h4>
+                  <p>/ person</p>
+                </div>
+                <h1 class="total-tip-amount">$ 0.00</h1>
+              </div>
+              <div class="total-amount">
+                <div class="amount-styles">
+                  <h4>Total</h4>
+                  <p>/ person</p>
+                </div>
+                <h1 class="total-bill-per-person">$ 0.00</h1>
+              </div>
+            </div>
+            <div class="reset-button-container">
+              <div class="reset-button">
+                <button class="rstBtn">Reset</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
